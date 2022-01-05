@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<!--WHEN CHANGING SIZE (MID GAME) CLICK DOESN'T WORK
+  is it important? is it necessary?
+ -->
+
+<head>
+  <source src="audio/Hallway/Ambience.wav" type="audio/mpeg">
+  <title>Redacted Lab - Hallway</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <link rel="stylesheet" href="css/room.css" type="text/css" />
+  <link rel="stylesheet" href="css/hallway.css" type="text/css" />
+  <script src="js/hallway.js"></script>
+  <script src="js/global.js"></script>
+
+</head>
+
+<body onload="onLoad();">
+  <div id="wrapper">
+    <div id="head">
+      <h1 class="content" id="gameName">THE <span id="redactID" class="redact">REDACTED</span> LAB</h1>
+    </div>
+    <div class="row">
+      <div id="col-left">
+        <p>Time Left: <span id="timer"></span> seconds</p><br />
+        <div id="gameText">
+        </div>
+        <br />
+      </div>
+      <div id="col-right">
+        <h2 id="roomName">Hallway</h2>
+        <div id="imageDiv">
+          <button id="windowButton" title="A barred window leading outside" onclick="windowClick();"></button>
+          <button id="exitDoorButton" title="A chain and steel door leading to an exit from the hallway" onclick="exitClick();"></button>
+          <button id="sideRoomButton" title="A door leading leading to a corridor" onclick="sideRoomClick();"></button>
+          <button id="chemicalButton" title="A tray of chemical in glass bottles and beakers" onclick="showSelection();"></button>
+          <!-- <button id="cipherNotebutton" title="An open morgue cooler, maybe there is something useful inside " onclick="loadMorgueLocker();"></button> -->
+          <button id="noteButton" title="An old tattered note written by Dr Friedrich" onclick="expandNote()"></button>
+          <div id="myModalDiv" class="modal">
+            <span class="close" onclick="closeNote()">&times;</span>
+            <img id="expandedNote">
+            <div id="caption"></div>
+          </div>
+          <img id="img" src="images/Hall/hallway.png" alt="A dark hallway with a gate leading to an exit at one end, a window on the right leading outside, and a path leading to a corridor on the left" width="100%" />
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <button id="colourMode" onclick="toggleColours();">Toggle Theme</button>
+    </div>
+  </div>
+
+</body>
+
+</html>

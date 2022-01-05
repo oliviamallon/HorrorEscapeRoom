@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exit Room</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <link rel="stylesheet" href="css/room.css" type ="text/css" />
+
+        <style type="text/css">
+        * {
+        margin: 0px;
+        padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+      }
+img{
+  margin:0px;
+  padding:0px;
+
+}
+
+    .light {
+    position: absolute;
+    top: 1;
+    left:0 ;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+
+    background: radial-gradient(circle at var(--x) var(--y),
+     #ffeeaa30 6%, rgba(0,0,0,.985) 10%);
+}
+        </style>
+
+        <script type="text/javascript">
+
+        const pos = document.documentElement;
+
+        var example = document.getElementById('imageDiv');
+        example.onmousemove = function(e) {
+
+          //var x = event.clientX - $('imageDiv').offset().left;
+          //var y = event.clientY - $('imageDiv').offset().top;
+
+          var x = e.pageX - this.offsetLeft;
+          var y = e.pageY - this.offsetTop;
+          pos.style.setProperty('--x', (x) + 'px')
+          pos.style.setProperty('--y', (y) + 'px')
+        }
+
+        </script>
+
+    </head>
+    <body>
+      <div id="wrapper">
+    <div id="head">
+      <h1>Redacted Laboratory</h1>
+    </div>
+    <div class="row">
+      <div id="col-left">
+        <p id="timer"></p>
+        <div id="gameText">
+        </div>
+      </div>
+      <div id="col-right">
+        <h2 id="roomName">Final Room</h2>
+
+
+        <!--Holds the image of the room and buttons/clickable items in room -->
+        <div id="imageDiv">
+          <div class="light"></div>
+
+          <button id="exitButton" onclick="displayCode();"></button>
+          <button title="goldKey" class="key" id="goldKey" onclick="keyFound('gold');"></button>
+          <button class="key" id="blueKey" onclick="keyFound('blue');"></button>
+          <button class="key" id="purpleKey" onclick="keyFound('purple');"></button>
+          <img id="img_ID" src="img/Exit/exitRoom.jpg"   width="100%" alt="" />
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

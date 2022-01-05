@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Redacted Lab - Laboratory</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <link rel="stylesheet" href="css/room.css" type="text/css" />
+  <link rel="stylesheet" href="css/lab.css" type="text/css" />
+  <script src="js/laboratory.js"></script>
+  <script src="js/global.js"></script>
+  <script src="js/start.js"></script>
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="head">
+        <h1 class="content" id="gameName">THE <span id="redactID" class="redact">REDACTED</span> LAB</h1>
+    </div>
+
+    <div class="row">
+      <div id="col-left">
+        <p>Time Left: <span id="timer"></span> seconds</p><br />
+        <p>[System] You've entered the domain of Doctor Friedrich. You better find an escape soon or meet the same fate as the rest of the subjects.</p><br/>
+    </div>
+
+      <div id="col-right">
+        <h2 id="roomName">Laboratory</h2>
+        <div id="imageDiv">
+          <button id="drawerButton" title="drawer" onclick="drawerClick();"></button>
+          <button id="noteButton" title="notes" onclick="noteClick();"></button>
+          <button id="compartmentButton" title="compartment1" onclick="compartmentClick();"></button>
+          <button id="compartment2Button" title="compartment2" onclick="compartment2Click();"></button>
+          <button id="backButton" title="BackToDrawers" onclick="backClick();"></button>
+          <button id="forwardButton" title="ForwardToLab" onclick="forwardClick();"></button>
+          <button id="noteBackButton" title="backToNotes" onclick="noteBackClick();"></button>
+          <button id="bookshelfButton" title="ToBookshelf" onclick="bookshelfClick();"></button>
+          <button id="openshelfButton" title="ToHallwayDoor" onclick="openshelfClick();"></button>
+          <button id="cellDoorButton" title="ToHallway" onclick="doorUnlockClick();"></button>
+
+          <!-- The Modal for Extra Note-->
+          <button id="noteModal" title="Note" onclick="expand()"></button>
+          <div id="myModal" class="modal">
+            <span class="close" onclick="closeNote()">&times;</span>
+            <img id="expandedNote">
+            <div id="caption"></div>
+          </div>
+
+          <img id="background" src="images/Lab/lab1.jpg" alt="Laboratory" />
+        </div>
+      </div>
+
+    </div>
+    <div id="footer">
+      <button id="colourMode" onclick="toggleColours();">Toggle Theme</button>
+    </div>
+  </div>
+</body>
+
+</html>

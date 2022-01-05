@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exit Room</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <link rel="stylesheet" href="css/room.css" type ="text/css" />
+        <link rel="stylesheet" href="css/exit.css" type="text/css" />
+        <script src="js/exit.js"></script>
+        <script src="js/global.js"></script>
+    </head>
+
+    <body>
+      <div id="wrapper">
+        <div id="head">
+          <h1 class="content" id="gameName">THE <span id="redactID" class="redact">REDACTED</span> LAB</h1>
+        </div>
+    <div class="row">
+      <div id="col-left">
+        <p>Time Left: <span id="timer"></span> seconds</p><br />
+
+        <p id="keys"></p>
+        <div id="gameText">
+        </div>
+          <button type="button" class="soundBtn" id="play"></button>
+          <!-- KEY FOUND SOUND: https://freesound.org/people/Mativve/sounds/391539/ -->
+          <audio id="keyFound" class="soundBtn" src="audio/Exit/keyFound.wav">
+          <!-- KEYPAD WRONG CODE SOUND: https://freesound.org/people/Autistic%20Lucario/sounds/142608/ -->
+          <audio id="keypadError" class="soundBtn" src="audio/Exit/keypadError.wav">
+          <!-- KEYPAD CLICK SOUND:  https://freesound.org/people/brnck/sounds/257357/-->
+          <audio id="keypadClick" class="soundBtn" src="audio/Exit/keypadClick.wav">
+          <!-- WHISPER SOUND:  https://freesound.org/people/brnck/sounds/257357/-->
+          <audio id="noteWhisper" class="soundBtn" src="audio/Exit/noteWhisper.mp3">
+          <!-- DOOR OPEN SOUND:  https://freesound.org/people/kokopetiyot/sounds/413249/-->
+          <audio id="openDoor" class="soundBtn" src="audio/Exit/doorOpen.wav">
+      </div>
+      <div id="col-right">
+
+        <h2 id="roomName">Final Room</h2>
+        <!--Holds the image of the room and buttons/clickable items in room -->
+        <div id="imageDiv" onmousemove="moveTorch();">
+          <div id="light"></div>
+          <button title="Exit Door" id="exitButton" onclick="displayCode();"></button>
+
+          <button title="Gold, Blue, Purple glass" class="roomItem" id="colouredGlass" onclick="colouredGlass();"></button>
+          <button title="a note" class="roomItem" id="wallNote" onclick="wallNote();"></button>
+          <button title="420" class="roomItem" id="wallCode" onclick="wallCode();"></button>
+          <button title="Gold Key button" class="roomItem" id="goldKey" onclick="keyFound('gold');"></button>
+          <button title= "Purple Key button"class="roomItem" id="purpleKey" onclick="purpleKeyCode();"></button>
+          <button title ="Keypad" class="roomItem" id="keyPad" onclick="expandKeypad();"></button>
+          <!-- MAIN ROOM IMAGE SOURCE: https://pixabay.com/photos/floor-corridor-perspective-empty-4825257/ -->
+          <!-- COLOURED WINDOW IMAGES:
+          BLUE: https://unsplash.com/photos/gPnHi8AmO5k
+          GOLD: https://unsplash.com/photos/Em96eDRJPD8
+          PURPLE: https://unsplash.com/photos/rKZ3-KUrWmU
+
+          Lock top of exit room image : https://unsplash.com/photos/jNGFbBSDUWY
+          -->
+          <img id="img_ID" src="images/Exit/exitRoom.png"  width="100%" alt="Exit room Image" />
+        </div>
+
+        <!-- The Modal for Keys -->
+        <div id="keyModal" class="modal">
+          <span class="close" onclick = "closeKey('key')">&times;</span>
+          <div id="imageDivKeys">
+              <img id="expandedKey">
+          </div>
+          <img id="expandedKey">
+          <div id="captionKey" class="captionModal"></div>
+        </div>
+
+        <!-- The Modal for Keypad -->
+          <div id="lockModal" class="modal">
+            <span class="close" onclick = "closeKey('lockModal')">&times;</span>
+            <div id="imageDivKeypad">
+              <button class="number" id="nine" title = "nine" onclick = "enterKeyCode('9');"></button>
+              <button class="number" id="eight" title = "eight" onclick = "enterKeyCode('8');"></button>
+              <button class="number" id="seven" title = "seven" onclick = "enterKeyCode('7');"></button>
+              <button class="number" id="six" title = "six" onclick = "enterKeyCode('6');"></button>
+              <button class="number" id="five" title = "five" onclick = "enterKeyCode('5');"></button>
+              <button class="number" id="four" title = "four" onclick = "enterKeyCode('4');"></button>
+              <button class="number" id="three" title = "three" onclick = "enterKeyCode('3');"></button>
+              <button class="number" id="two" title = "two" onclick = "enterKeyCode('2');"></button>
+              <button class="number" id="one" title = "one" onclick = "enterKeyCode('1');"></button>
+              <button class="number" id="zero" title = "zero" onclick = "enterKeyCode('0');"></button>
+              <button class="number" id="enterbtn" title = "Enter Button" onclick = "enterKeyCode('submit');">Submit</button>
+
+              <img id="expandedKeypad">
+    </div>
+    <div id="captionKeypadDiv">
+      <p>You have entered: <span id="userEntry"></span></p>
+      <p id="captionKeypad"></p>
+    </div>
+      </div>
+
+      <div id="noteModal" class="modal">
+        <span class="close" onclick = "closeKey('note')">&times;</span>
+        <!--Note source: https://unsplash.com/photos/U_Ff4ohzLSw -->
+        <img id="expandedNote" src = "images/Exit/note.png" alt="note with a code 872">
+        <div id="noteCaption"></div>
+      </div>
+
+      </div>
+    </div>
+
+    <div id="footer">
+   <button id="colourMode" onclick=" exitTheme();">Toggle Theme</button>
+   </div>
+  </div>
+
+</body>
+</html>

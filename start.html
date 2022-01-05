@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Redacted Lab - The Start</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <link rel="stylesheet" href="css/room.css" type="text/css" />
+  <link rel="stylesheet" href="css/start.css" type="text/css" />
+  <script src="js/global.js"></script>
+  <script src="js/start.js"></script>
+
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="head">
+      <h1 class="content" id="gameName">THE <span id="redactID" class="redact">REDACTED</span> LAB</h1>
+    </div>
+    <div class="row">
+      <div id="col-left">
+        <div class="form">
+          <form autocomplete="off">
+            <label for="subjectName">Subject Name: </label><br><br />
+            <input type="text" id="subject" name="subject">
+          </form>
+          <form>
+            <label for="cTrait">Character Trait: </label><br><br />
+            <select name="cTrait" id="cTrait">
+              <option value="intelligent">Intelligent</option>
+              <option value="cautious">Cautious</option>
+              <option value="courageous">Courageous</option>
+            </select>
+          </form>
+        </div>
+        <input type="submit" onclick="saveData();" value="Submit" />
+      </div>
+
+
+      <div id="col-right">
+        <h2 id="roomName">Start</h2>
+        <div id="imageDiv">
+          <video width="80%" height="50%" autoplay muted id="intro" loop>
+            <source src="images/Start/TheRedactedLabStart.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+    </div>
+    <div id="footer">
+      <button id="colourMode" onclick="toggleColours();">Toggle Theme</button>
+    </div>
+  </div>
+</body>
+
+</html>

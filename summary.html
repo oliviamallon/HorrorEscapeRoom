@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+  <html>
+
+  <head>
+    <title>The Redacted Laboratory</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/room.css" type ="text/css" />
+    <link rel="stylesheet" href="css/summary.css" type ="text/css" />
+    <script src="js/summary.js"></script>
+    <script src="js/global.js"></script>
+
+  </head>
+
+  <body onload="gameMode();">
+    <div id="wrapper">
+        <div id="head">
+          <h1 class="content" id="gameName">THE <span id="redactID" class="redact">REDACTED</span> LAB</h1>
+        </div>
+  <div class="row">
+    <div id="col-left">
+
+      <h2 id="change">Game Summary</h2><br />
+      <p>Click anywhere on the screen to hear some sounds!</p>
+      <br />
+
+      <div id="gameStats">
+        <p id="trait"></p><br />
+        <p id="noTimes"></p>
+
+        <table id="stats">
+          <tr>
+            <th>Room</th>
+            <th>Time (in secs)</th>
+          </tr>
+        </table>
+        <br />
+        <p id="totalTime"></p>
+
+        <br />
+        <button id="restart" title="Restart Button" onclick="restart();">RESTART</button>
+        <!--NEED TO ADD CLEAR SESSION STORAGE -->
+        <!--NEED TO ADD CLEAR TIMERS FOR EACH ROOM -->
+        <button type="button" class="soundBtn" id="play"></button>
+
+        <!-- WIN SOUND: https://www.zapsplat.com/music/multimedia-processed-male-voice-says-you-win-1/-->
+        <audio id="youWin" class="soundBtn" src="audio/Summary/youWin2.mp3">
+
+        <!-- LOSE SOUND:https://www.zapsplat.com/music/multimedia-processed-male-voice-says-you-lose/ -->
+        <audio id="youLose" class="soundBtn" src="audio/Summary/youLose2.mp3">
+
+        </div>
+    </div>
+    <div id="col-right">
+      <h2 id="roomName"></h2>
+      <div id="imageDiv">
+          <img id="doctor"/>
+      </div>
+  </div>
+</div>
+<div id="footer">
+  <button id="colourMode" onclick="summaryTheme();">Toggle Theme</button>
+</div>
+</body>
+
+  </html>

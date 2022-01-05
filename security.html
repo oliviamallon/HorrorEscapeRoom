@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Security</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <link rel="stylesheet" href="css/room.css" type="text/css" />
+  <link rel="stylesheet" href="css/security.css" type="text/css" />
+
+  <script src="js/security.js"></script>
+  <script src="js/global.js"></script>
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="head">
+      <h1 class="content" id="gameName">THE <span id="redactID" class="redact">REDACTED</span> LAB</h1>
+    </div>
+    <div class="row">
+
+      <div id="col-left">
+        <p>Time Left: <span id="timer"></span> seconds</p><br />
+        <div id="gameText">
+          <p> Seems like this is the room Dr Friedrich used this room to monitor his subjects </p>
+        </div>
+
+      </div>
+
+
+      <div id="col-right">
+
+        <h2 id="roomName">Security</h2>
+
+        <div id="imageDiv">
+          <div id="wiresImage" onmousemove="moveTorch(event)">
+
+            <button id="backButton" title="Back" onclick="backToSecurity();">Back</button>
+            <button id="wiresbutton" title="Electrical Wires" onclick="expandWires();"></button>
+            <button id="doorbutton" title="Exit Door" onclick="exit();"></button>
+            <button id="firstbutton" title="Press Button 1" onclick="unlock(1);"></button>
+            <button id="secondbutton" title="Press Button 2" onclick="unlock(2);"></button>
+            <button id="thirdbutton" title="Press Button 3" onclick="unlock(3);"></button>
+            <button id="noteModal" title="Note" onclick="expand()"></button>
+            <button id="melModalButton" title="Note" onclick="expandMel()"></button>
+
+
+            <img id="roomImg" src="images/Security/ControlRoom (WIP).jpg" alt="ControlRoom" usemap="#wires">
+            <!-- Wires room -->
+            <button id="leftWire" class="booton" title="Loose Wire" onclick="wiresClick();"></button>
+
+            <input id="passcodeLock" title="3 digit password lock" type="text" onkeyup="passwordEntered();">
+
+            <div id="light"></div>
+          </div>
+
+          <!-- The Modal for Extra Note-->
+          <div id="myModal" class="modal">
+            <span class="noteClose" onclick="closeNote()">&times;</span>
+            <img id="expandedNote" alt="Bloody note with 1,3,2">
+            <div id="caption"></div>
+          </div>
+
+          <!-- The Modal for Mel's Note-->
+          <div id="melModal" class="modal">
+            <span class="melClose" onclick="closeMel()">&times;</span>
+            <img id="expandedMel" alt="Letter to MEL, MEL was mentioned many times">
+            <div id="melCaption"></div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div id="footer">
+      <button id="colourMode" onclick="toggleColours();buttonBorder();">Toggle Theme</button>
+    </div>
+  </div>
+
+  </div>
+  </div>
+
+</body>
+
+</html>
