@@ -1,0 +1,196 @@
+
+/** Buttons **/
+
+#drawerButton {
+  border: none;
+  display: block;
+  width: 12%;
+  top: 30%;
+  right: -1%;
+  height: 35%;
+  position: absolute;
+  cursor: pointer;
+  background: none;
+}
+
+#noteButton {
+  border: none;
+  display: none;
+  width: 12%;
+  top: 60%;
+  right: 70%;
+  height: 21%;
+  position: absolute;
+  cursor: pointer;
+  background: none;
+}
+
+#compartmentButton {
+  border: none;
+  display: none;
+  width: 12%;
+  top: 45%;
+  right: 57%;
+  height: 21%;
+  position: absolute;
+  cursor: pointer;
+  background: none;
+}
+
+#compartment2Button {
+  border: none;
+  display: none;
+  width: 30%;
+  top: 72%;
+  right: 14%;
+  height: 28%;
+  position: absolute;
+  cursor: pointer;
+  background: none;
+}
+
+#noteModal {
+  border: none;
+  display: none;
+  width: 15%;
+  height: 33%;
+  top: 40%;
+  right: 45%;
+  position: absolute;
+  cursor: pointer;
+  background: none;
+}
+
+#backButton {
+  border: none;
+  display: none;
+  width: 20%;
+  top: 0%;
+  right: -1%;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+  background: none;
+}
+
+#forwardButton {
+  border: none;
+  display: none;
+  width: 20%;
+  top: 0%;
+  right: 79%;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+  background: none;
+}
+
+#noteBackButton {
+  border: none;
+  display: none;
+  width: 10%;
+  top: 82%;
+  right: 63%;
+  height: 15%;
+  position: absolute;
+  cursor: pointer;
+  background: none;
+}
+
+#bookshelfButton {
+  border: none;
+  display: none;
+  width: 20%;
+  top: 0%;
+  right: -1%;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+  background: none;
+}
+
+#openshelfButton {
+  border: none;
+  display: none;
+  width: 17%;
+  top: 20%;
+  right: 27%;
+  height: 80%;
+  position: absolute;
+  cursor: pointer;
+  background: none;
+}
+
+#cellDoorButton {
+  border: none;
+  display: none;
+  width: 15%;
+  top: 38%;
+  right: 57%;
+  height: 22%;
+  position: absolute;
+  cursor: pointer;
+  background: none;
+}
+
+/* The expanded note */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+#expandedNote {
+  margin: 50px, 50px, 50px, 50px display: block;
+  width: 80%;
+  justify-content: center;
+  max-width: 700px;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+}

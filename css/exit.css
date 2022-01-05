@@ -1,0 +1,289 @@
+#exitButton {
+  border:none;
+  display: block;
+  width: 24%;
+  top: 47%;
+  right: 36%;
+  height: 48%;
+  position: absolute;
+  cursor: pointer;
+  background:none;
+}
+
+#goldKey{
+  width: 9%;
+  top: 81%;
+  right: 83%;
+  height: 17%;
+
+  background:transparent;
+  background-size:100%;
+}
+
+#keyPad{
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  background-size:100%;
+  width: 7%;
+  top: 82%;
+  right: 1%;
+  height: 15%;
+  background:transparent;
+  background-size:100%;
+}
+
+ul {
+  padding-left:4%;
+}
+
+#purpleKey{
+  width: 6%;
+  top: 1%;
+  right: 47%;
+  height: 13%;
+  background:transparent;
+  background-size:100%;
+}
+
+#wallCode{
+  width: 3%;
+  top: 78%;
+  right: 60%;
+  height: 9%;
+  background:transparent;
+  background-size:100%;
+}
+
+#wallNote{
+  width: 11%;
+  top: 29%;
+  right: 11%;
+  height: 12%;
+  background:transparent;
+  background-size:100%;
+}
+
+#colouredGlass{
+  width: 19%;
+  top: 35%;
+  right: 39%;
+  height: 12%;
+  background:transparent;
+  background-size:100%;
+}
+
+#imageDivKeys{
+  margin: auto;
+  display: block;
+  width: 60%;
+  right: 50%;
+  justify-content: center;
+  max-width: 700px;
+}
+
+.roomItem {
+  border:none;
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  background-size:100%;
+}
+
+/* The expanded modals */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  align-content:center;
+}
+
+.modal img {
+  margin: auto;
+  display: none;
+  width: 80%;
+  text-align: center;
+  justify-content: center;
+}
+
+
+/* Caption of Modal Image */
+#captionKey {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+#expandedKey{
+  margin: auto;
+  display: block;
+  width: 100%;
+  right: 50%;
+  justify-content: center;
+  max-width: 700px;
+}
+
+#noteModal #expandedNote{
+  right: 50%;
+  justify-content: center;
+  max-width: 700px;
+
+  width:50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#captionKeypadDiv {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#timer{
+  font-size: large;
+}
+
+/*Left wire button to fix it*/
+.number{
+  border:none;
+  width:16%;
+  height:6%;
+
+  position: absolute;
+  cursor: pointer;
+  background: none;
+}
+
+#nine{
+  top: 33%;
+  right: 20%;
+}
+
+#eight{
+  top: 33%;
+  right: 42%;
+}
+
+#seven {
+  top: 33%;
+  right: 63%;
+}
+
+#six{
+  top: 23%;
+  right: 21%;
+}
+
+#five {
+  top: 23%;
+  right: 42%;
+}
+
+#four {
+  top: 23%;
+  right: 62%;
+}
+
+#three{
+  top: 14%;
+  right: 21%;
+}
+
+#two {
+  top: 14%;
+  right: 42%;
+}
+
+#one {
+  top: 14%;
+  right: 62%;
+}
+
+#zero {
+  top: 43%;
+  right: 42%;
+}
+
+#enterbtn{
+  border: 1px solid black;
+  background-color:white;
+  top: 43%;
+  right: 20%;
+  font-size:1vw;
+}
+
+#expandedKeypad {
+  margin: auto;
+  display: block;
+  height: 5%;
+  right: 50%;
+  justify-content: center;
+}
+
+#imageDivKeypad{
+  margin:auto;
+  justify-content: center;
+  width:20%;
+  position:relative;
+}
+
+#light {
+  position: absolute;
+  top: 0;
+  left:0 ;
+  margin-left:1%;
+
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+  background: radial-gradient(circle at var(--x) var(--y),
+   #ffeeaa30 6%, rgba(0,0,0,.985) 10%);
+}
+
+#play{
+  display:none;
+}
+
+#controlAudio {
+  position: absolute;
+  right: 4%;
+  width: 7%;
+}

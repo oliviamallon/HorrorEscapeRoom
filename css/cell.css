@@ -1,0 +1,233 @@
+#drawerButton {
+  border: none;
+  display: block;
+  width: 12%;
+  top: 70%;
+  right: 68%;
+  height: 17%;
+  position: absolute;
+  cursor: pointer;
+  background: none;
+}
+
+#arrowButton {
+  border: none;
+  display: block;
+  width: 15%;
+  top: 30%;
+  right: 1%;
+  height: 12%;
+  position: absolute;
+  cursor: pointer;
+  background:url('../images/Cell/turnAroundMsg.png') no-repeat;
+  background-size:100%;
+}
+
+#cellGateButton {
+  border: none;
+  position: absolute;
+  width: 70%;
+  top: 0%;
+  right: -2%;
+  height: 99%;
+  background: url('../images/Cell/Cell-bars.png') no-repeat;
+  background-size: 100%;
+  display: none;
+}
+
+#codeDisplay {
+  border: none;
+  display: block;
+  width: 10%;
+  top: 53%;
+  right: 1%;
+  height: 12%;
+  position: absolute;
+  cursor: pointer;
+  background: none;
+}
+
+#lockedDoorButton {
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  width: 12%;
+  top: 32%;
+  right: 24%;
+  height: 35%;
+  background: none;
+  display: none;
+}
+
+#openDoorButton {
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  width: 12%;
+  top: 32%;
+  right: 24%;
+  height: 35%;
+  background: none;
+  display: none;
+}
+
+#doorControButtonTri {
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  width: 5%;
+  top: 34%;
+  right: 36.9%;
+  height: 7%;
+  background: url('../images/Cell/triButtonImg.png') no-repeat;
+  background-size: 100%;
+  display: none;
+}
+
+#gateLockButton{
+  border: 1px solid black;
+  position: absolute;
+  cursor: pointer;
+  width: 6.1%;
+  top: 60%;
+  right: 45%;
+  height: 8%;
+  background:none;
+  background-size: 100%;
+  display: none;
+}
+
+
+#doorControButtonCir {
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  width: 5%;
+  top: 42%;
+  right: 36.8%;
+  height: 7%;
+  background: url('../images/Cell/cirButtonImg.png') no-repeat;
+  background-size: 100%;
+  display: none;
+}
+
+#doorControButtonSqu {
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  width: 5%;
+  top: 50%;
+  right: 36.6%;
+  height: 7%;
+  background: url('../images/Cell/squButtonImg.png') no-repeat;
+  background-size: 100%;
+  display: none;
+}
+
+#doorControButtonX {
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  width: 5%;
+  top: 58%;
+  right: 36.4%;
+  height: 7%;
+  background: url('../images/Cell/xButtonImg.png') no-repeat;
+  background-size: 100%;
+  display: none;
+}
+
+#lockPickButton {
+  border: none;
+  display: block;
+  width: 6%;
+  top: 67%;
+  right: 32%;
+  height: 5%;
+  position: absolute;
+  cursor: pointer;
+  background: url('../images/Cell/lockPickimg.png') no-repeat;
+  background-size: 100%;
+
+}
+
+#noteModal {
+  border: 2px solid red;
+  display: none;
+  width: 8%;
+  height: 15%;
+  top: 83%;
+  right: 90%;
+  cursor: pointer;
+  position: absolute;
+  background:url('../images/Cell/victimsDiary.png') no-repeat;
+  background-size:100%;
+}
+
+#lockPickInv {
+  border: 2px solid red;
+  display: none;
+  width: 8%;
+  height: 5%;
+  top: 93%;
+  right: 81%;
+  cursor: pointer;
+  position: absolute;
+  background:url('../images/Cell/lockPickimg.png') no-repeat;
+  background-color: silver;
+  background-size:100%;
+}
+
+
+/* The expanded note */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+#expandedNote{
+  margin: 50px, 50px, 50px, 50px
+  display: block;
+  width: 80%;
+  justify-content: center;
+  max-width: 700px;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}

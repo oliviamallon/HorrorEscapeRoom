@@ -1,0 +1,344 @@
+
+#myModal #expandedNote{
+  right: 50%;
+  justify-content: center;
+  max-width: 700px;
+
+  width:50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#melModal #expandedMel{
+  right: 50%;
+  justify-content: center;
+  max-width: 700px;
+
+  width:50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#light {
+  display: none;
+  position: absolute;
+  top: 0;
+  left:1% ;
+
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+  background: radial-gradient(circle at var(--x) var(--y),
+   #ffeeaa30 6%, rgba(0,0,0,.985) 10%);
+}
+
+#head {
+  height: 150px;
+  font-size: 1.5em;
+  text-align: left;
+  padding: 50px 50px 0px 0px;
+  text-align: center;
+  background-repeat: no-repeat;
+  color: #C3073F;
+  border-bottom: 3px solid #6f2232;
+}
+
+#roomName {
+  color: white;
+  padding-bottom: 2%;
+  text-align: center;
+  font-size: 2em;
+}
+
+#wiresbutton {
+  display:none;
+  border: 0px solid black;
+  width: 16%;
+  top: 25%;
+  right: 25%;
+  height: 8%;
+  position: absolute;
+  cursor: pointer;
+  background: none;
+}
+
+#wiresbutton:hover {
+  border: 2px solid black;
+}
+
+#doorbutton {
+  border: 0px solid black;
+  width: 4%;
+  top: 9%;
+  right: 34%;
+  height: 14%;
+  position: absolute;
+  cursor: pointer;
+  background: none;
+}
+
+#doorbutton:hover {
+  border: 2px solid black;
+}
+
+/* Buttons to be pressed in a certain order*/
+#firstbutton {
+  border: 0px solid black;
+  width: 3.5%;
+  height: 5%;
+  top: 10%;
+  right: 90.5%;
+  position: absolute;
+  cursor: pointer;
+  background: none;
+}
+
+#firstbutton:hover {
+  border: 2px solid black;
+}
+
+#secondbutton {
+  border: 0px solid black;
+  width: 3.5%;
+  height: 5%;
+  top: 10%;
+  right: 86.5%;
+  position: absolute;
+  cursor: pointer;
+  background: none;
+}
+
+#secondbutton:hover {
+  border: 2px solid black;
+}
+
+#thirdbutton {
+  border: 0px solid black;
+  width: 3.5%;
+  height: 5%;
+  top: 10%;
+  right: 82.5%;
+  position: absolute;
+  cursor: pointer;
+  background: none;
+}
+
+#thirdbutton:hover {
+  border: 2px solid black;
+}
+
+#noteModal {
+  border: 0px solid black;
+  width: 4.5%;
+  height: 6%;
+  top: 27%;
+  right: 93.5%;
+  position: absolute;
+  cursor: pointer;
+  background: none;
+}
+
+#noteModal:hover {
+  border: 2px solid black;
+}
+
+#melModalButton {
+    border: 0px solid black;
+    width: 12.5%;
+    height: 14%;
+    top: 11%;
+    right: 85.5%;
+    position: absolute;
+    cursor: pointer;
+    background: none;
+    display: none;
+}
+
+#melModalButton:hover {
+  border: 2px solid black;
+}
+
+/* The expanded note */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Caption of Modal Image */
+#melCaption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+#expandedMel {
+  margin: auto;
+  display: none;
+  width: 80%;
+  right: 50%;
+  justify-content: center;
+  max-width: 700px;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* The Close Button */
+.noteClose {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.noteClose:hover,
+.noteClose:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* The Close Button */
+.noteClose {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.melClose:hover,
+.melClose:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* The Close Button */
+.melClose {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/*Left wire button to fix it*/
+#leftWire {
+  border: 0px solid black;
+  width: 3.5%;
+  height: 5%;
+  top: 34%;
+  right: 56%;
+  position: absolute;
+  cursor: pointer;
+  background: none;
+  display:none;
+}
+
+/*Left wire button to fix it*/
+#leftWire:hover,
+#leftWire:focus {
+  border: 2px solid black;
+}
+
+#roomImg{
+  width: 100%;
+  height: 80%;
+  display: block;
+}
+
+#backButton{
+  display:none;
+  border: 0px solid black;
+  width: 3.5%;
+  height: 5%;
+  top: 1%;
+  right: 95%;
+  position: absolute;
+  cursor: pointer;
+  background: none;
+  color: white;
+}
+
+#backButton:hover{
+  border: 1px solid black;}
+
+#col-left{
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 1000px;
+}
+
+#passcodeLock {
+    top: 6.5%;
+    right: 38%;
+    position: absolute;
+    height: 6.2%;
+    width: 13.5%;
+    font-size:200%;
+    display: none;
+    background-color: grey;
+    border: 1px white solid;
+}

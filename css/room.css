@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+
+*{
+  font-family: 'Lacquer', cursive;
+}
+
+#gameName {
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+
+#redact {
+  background-color: #C3073F;
+  min-width: 50%;
+  -webkit-transition: background-color 500ms ease-out;
+  -moz-transition: background-color 500ms ease-out;
+  -o-transition: background-color 500ms ease-out;
+  transition: background-color 500ms ease-out;
+}
+
+#gameName:hover #redact {
+  background-color: rgba(0,0,0,0);
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+#wrapper {
+  width: 95%;
+  /* This sets the wrapper to take 95% of the browser window width */
+  margin: 3% auto;
+  /* the ‘auto’ part positions the #wrapper in the middle of the browser window */
+  overflow: auto;
+  background-color: #1A1A1D;
+}
+
+.dark-mode  {
+  width: 95%;
+  /* This sets the wrapper to take 95% of the browser window width */
+  margin: 3% auto;
+  /* the ‘auto’ part positions the #wrapper in the middle of the browser window */
+  overflow: auto;
+  background-color: white;
+  border-radius: 2%;
+}
+
+body {
+  font-family: verdana, sans-serif;
+  background-color: #171717;
+}
+
+.row {
+  display: flex;
+}
+
+#col-left {
+  width: 30%;
+  float: left;
+  padding: 2%;
+  color: white;
+  border-right: 3px solid #6f2232;
+  overflow: auto;
+  height:100vh;
+}
+
+#col-right img {
+  width: 100%;
+  margin-left: 1%;
+  border-radius: 3%;
+}
+
+#col-right {
+  width: 70%;
+  float: left;
+  padding: 2%;
+  text-align: center;
+}
+
+a {
+  clear: both;
+}
+
+#imageDiv {
+  position: relative;
+}
+
+#head {
+  height: 7.5em;
+  font-size: 1.5em;
+  text-align: left;
+  padding: 2.5em 2.5em 0em 0em;
+  text-align: center;
+  background-repeat: no-repeat;
+  color: #C3073F;
+  border-bottom: 3px solid #6f2232;
+}
+
+#roomName {
+  color: white;
+  padding-bottom: 2%;
+  text-align: center;
+  font-size: 2em;
+}
+
+#roomName-light {
+  color: black;
+  padding-bottom: 2%;
+  text-align: center;
+  font-size: 2em;
+}
+
+#img {
+  display: block;
+    border-radius: 8%;
+}
+
+@media only screen and (max-width: 768px) {
+  #col-left {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  #col-right {
+    width: 100%;
+    font-size: 12px;
+  }
+}
+
+#colourMode{
+    margin: 1%;
+    position: relative;
+    border-radius: 10%;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    box-shadow: 3px 3px #666;
+
+}
+
+#colourMode:active {
+  background-color: black;
+  color: white;
+  box-shadow: 3px 3px #666;
+  transform: translateY(4px);
+}

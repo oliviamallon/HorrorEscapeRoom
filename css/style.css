@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+
+*{
+  font-family: 'Lacquer', cursive;
+}
+
+.content {
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.8em;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+
+.redact {
+  background-color: #C3073F;
+  min-width: 50%;
+  -webkit-transition: background-color 500ms ease-out;
+  -moz-transition: background-color 500ms ease-out;
+  -o-transition: background-color 500ms ease-out;
+  transition: background-color 500ms ease-out;
+}
+
+.content:hover .redact {
+  background-color: rgba(0,0,0,0);
+}
+
+.content-black {
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.8em;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+
+.redact-black {
+  background-color: black;
+  min-width: 50%;
+  -webkit-transition: background-color 500ms ease-out;
+  -moz-transition: background-color 500ms ease-out;
+  -o-transition: background-color 500ms ease-out;
+  transition: background-color 500ms ease-out;
+}
+
+.content-black:hover .redact-black {
+  background-color: rgba(0,0,0,0);
+}
+
+.player {
+  font-weight: bold;
+}
